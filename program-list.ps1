@@ -1,11 +1,3 @@
-Write-Host "    _    ____                                "
-Write-Host "   / \  | __ )	https://github.com/iFanatical"
-Write-Host "  / _ \ |  _ \                               "
-Write-Host " / ___ \| |_) | Windows Automation Script    "
-Write-Host "/_/   \_\____/  	                         "
-#
-#
-#
 # Install general programs
 Write-Host "--------------------------------------"
 Write-Host "Installing browsers"
@@ -159,6 +151,10 @@ Write-Host "--------------------------------------"
 Write-Host "Installing Neovim"
 Write-Host "--------------------------------------"
 winget install Neovim.Neovim
+Write-Host "--------------------------------------"
+Write-Host "Installing Obsidian"
+Write-Host "--------------------------------------"
+winget install Obsidian.Obsidian
 #
 #
 #
@@ -210,37 +206,10 @@ winget install AdrienAllard.FileConverter
 #
 #
 # Copy files to the documents folder
-Write-Host "--------------------------------------"
-Write-Host "Copying 'Documents' folder - AHK, PowerShell, etc"
-Write-Host "--------------------------------------"
 robocopy H:\Backup\Documents $Env:UserProfile\Documents /e /w:0 /r:0
-Write-Host "--------------------------------------"
-Write-Host "Copying 'Music' folder"
-Write-Host "--------------------------------------"
-robocopy H:\Backup\Music $Env:UserProfile\Music /e /w:0 /r:0
-Write-Host "--------------------------------------"
-Write-Host "Copying 'projects' folder"
-Write-Host "--------------------------------------"
-robocopy H:\Backup\projects $Env:UserProfile\projects /e /w:0 /r:0
-Write-Host "--------------------------------------"
-Write-Host "Copying Windows Terminal settings.json file"
-Write-Host "--------------------------------------"
-robocopy $Env:UserProfile\projects\windows-files\settings.json $Env:UserProfile\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json /e /w:0 /r:0
-Write-Host "--------------------------------------"
-Write-Host "Copying videos"
-Write-Host "--------------------------------------"
 robocopy H:\Backup\Videos $Env:UserProfile\Videos /e /w:0 /r:0
-Write-Host "--------------------------------------"
-Write-Host "Copying .config files"
-Write-Host "--------------------------------------"
 robocopy H:\Backup\.config $Env:UserProfile\.config /e /w:0 /r:0
-Write-Host "--------------------------------------"
-Write-Host "Copying .ssh keys"
-Write-Host "--------------------------------------"
 robocopy H:\Backup\.ssh $Env:UserProfile\.ssh /e /w:0 /r:0
-Write-Host "--------------------------------------"
-Write-Host "Copying hosts file"
-Write-Host "--------------------------------------"
 robocopy H:\Backup\hosts C:\Windows\System32\drivers\etc\hosts /e /w:0 /r:0
 
 
