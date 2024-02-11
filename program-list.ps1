@@ -34,11 +34,7 @@ winget install GIMP.GIMP
 #
 #
 Write-Host "--------------------------------------"
-Write-Host "Installing audio and video utilities"
-Write-Host "--------------------------------------"
-Write-Host "Installing Audacity"
-Write-Host "--------------------------------------"
-winget install Audacity.Audacity
+Write-Host "Installing video utilities"
 Write-Host "--------------------------------------"
 Write-Host "Installing Kdenlive"
 Write-Host "--------------------------------------"
@@ -55,6 +51,15 @@ Write-Host "--------------------------------------"
 Write-Host "Installing VLC"
 Write-Host "--------------------------------------"
 winget install VideoLAN.VLC
+#
+#
+#
+Write-Host "--------------------------------------"
+Write-Host "Installing video utilities"
+Write-Host "--------------------------------------"
+Write-Host "Installing Audacity"
+Write-Host "--------------------------------------"
+winget install Audacity.Audacity
 #
 #
 #
@@ -96,6 +101,10 @@ Write-Host "--------------------------------------"
 Write-Host "Installing Python 3.11"
 Write-Host "--------------------------------------"
 winget install Python.Python.3.11
+Write-Host "--------------------------------------"
+Write-Host "Installing or updating Windows Terminal"
+Write-Host "--------------------------------------"
+winget install 9N0DX20HK701
 #
 #
 #
