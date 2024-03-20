@@ -16,10 +16,6 @@
             "keys": "ctrl+v"
         },
         {
-            "command": "find",
-            "keys": "ctrl+shift+f"
-        },
-        {
             "command": 
             {
                 "action": "splitPane",
@@ -27,11 +23,19 @@
                 "splitMode": "duplicate"
             },
             "keys": "alt+shift+d"
+        },
+        {
+            "command": "find",
+            "keys": "ctrl+shift+f"
         }
     ],
+    "centerOnLaunch": true,
     "copyFormatting": "none",
     "copyOnSelect": false,
-    "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+    "defaultProfile": "{1bd3944f-3c89-40e1-ac02-a9041992ac67}",
+    "initialCols": 150,
+    "initialPosition": ",",
+    "initialRows": 40,
     "newTabMenu": 
     [
         {
@@ -51,11 +55,13 @@
             "experimental.retroTerminalEffect": false,
             "font": 
             {
-                "face": "Ubuntu Mono",
+                "face": "JetBrainsMonoNL Nerd Font Mono",
+                "size": 10.0,
                 "weight": "normal"
             },
             "opacity": 75,
             "padding": "8",
+            "scrollbarState": "hidden",
             "useAcrylic": true
         },
         "list": 
@@ -77,6 +83,21 @@
                 "hidden": false,
                 "name": "Azure Cloud Shell",
                 "source": "Windows.Terminal.Azure"
+            },
+            {
+                "commandline": "\"C:\\Program Files\\PowerShell\\7\\pwsh.exe\"",
+                "elevate": true,
+                "guid": "{1bd3944f-3c89-40e1-ac02-a9041992ac67}",
+                "hidden": false,
+                "icon": "ms-appx:///ProfileIcons/pwsh.png",
+                "name": "PowerShell",
+                "startingDirectory": "%USERPROFILE%"
+            },
+            {
+                "guid": "{58ad8b0c-3ef8-5f4d-bc6f-13e4c00f2530}",
+                "hidden": false,
+                "name": "Debian",
+                "source": "Windows.Terminal.Wsl"
             }
         ]
     },
@@ -130,26 +151,72 @@
         },
         {
             "background": "#282C34",
-            "black": "#1C1F24",
-            "blue": "#51AFEF",
-            "brightBlack": "#5B6268",
-            "brightBlue": "#2257A0",
-            "brightCyan": "#46D9FF",
-            "brightGreen": "#4DB5BD",
-            "brightPurple": "#A9A1E1",
-            "brightRed": "#DA8548",
-            "brightWhite": "#CCCCCC",
+            "black": "#000000",
+            "blue": "#A9A1E1",
+            "brightBlack": "#000000",
+            "brightBlue": "#A9A1E1",
+            "brightCyan": "#51AFEF",
+            "brightGreen": "#99BB66",
+            "brightPurple": "#C678DD",
+            "brightRed": "#FF6655",
+            "brightWhite": "#BFBFBF",
             "brightYellow": "#ECBE7B",
-            "cursorColor": "#528BFF",
-            "cyan": "#5699AF",
+            "cursorColor": "#51AFEF",
+            "cyan": "#51AFEF",
             "foreground": "#BBC2CF",
             "green": "#98BE65",
-            "name": "Fanatical",
+            "name": "DoomOne",
             "purple": "#C678DD",
             "red": "#FF6C6B",
+            "selectionBackground": "#42444B",
+            "white": "#BBC2CF",
+            "yellow": "#ECBE7B"
+        },
+        {
+            "background": "#282C34",
+            "black": "#1C1F24",
+            "blue": "#2257A0",
+            "brightBlack": "#3F444A",
+            "brightBlue": "#51AFEF",
+            "brightCyan": "#46D9FF",
+            "brightGreen": "#98BE65",
+            "brightPurple": "#A9A1E1",
+            "brightRed": "#FF6C6B",
+            "brightWhite": "#EFEFEF",
+            "brightYellow": "#ECBE7B",
+            "cursorColor": "#BBC2CF",
+            "cyan": "#69BBD1",
+            "foreground": "#BBC2CF",
+            "green": "#627A41",
+            "name": "Fanatical",
+            "purple": "#C678DD",
+            "red": "#9C4241",
             "selectionBackground": "#FFFFFF",
-            "white": "#ECECEC",
-            "yellow": "#DA8548"
+            "white": "#5A6270",
+            "yellow": "#A18154"
+        },
+        {
+            "background": "#2E3440",
+            "black": "#3B4252",
+            "blue": "#5E81AC",
+            "brightBlack": "#4C566A",
+            "brightBlue": "#5E81AC",
+            "brightCyan": "#88C0D0",
+            "brightGreen": "#A3BE8C",
+            "brightPurple": "#B48EAD",
+            "brightRed": "#D08770",
+            "brightWhite": "#ECEFF4",
+            "brightYellow": "#EBCB8B",
+            "cursorColor": "#E5E9F0",
+            "cyan": "#88C0D0",
+            "foreground": "#FFFFFF",
+            "green": "#A3BE8C",
+            "name": "Nord",
+            "purple": "#B48EAD",
+            "red": "#BF616A",
+            "selectionBackground": "#FFFFFF",
+            "white": "#D8DEE9",
+            "yellow": "#EBCB8B"
         },
         {
             "background": "#282C34",
