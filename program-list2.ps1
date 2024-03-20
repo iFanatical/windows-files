@@ -45,7 +45,8 @@ $packages = @(
     "Microsoft.PowerToys",              # Provides a lot of useful tools
     "StartIsBack.StartAllBack",         # Restores Start Menu
     "Starship.Starship",                # Colorful terminal!
-    "AdrienAllard.FileConverter"        # Useful file conversion tool
+    "AdrienAllard.FileConverter",       # Useful file conversion tool
+	"DEVCOM.JetBrainsMonoNerdFont"		# Font used in Windows Terminal
 )
 
 # Loop through each package and perform 'winget' action
