@@ -1,4 +1,10 @@
-# Define an array of package names without @()
+# Install scoop
+iwr -useb get.scoop.sh | iex
+
+# Install choco
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+
+# Define an array of package for installation
 $packages = @(
     "Mozilla.Firefox",                  # Install Firefox
     "Alex313031.Thorium.AVX2",          # Install Thorium
@@ -43,10 +49,9 @@ $packages = @(
 )
 
 # Loop through each package and perform 'winget' action
-foreach ($package in $packages) {
-    # Use 'winget' command with the current package variable
-    $result = winget install $package
-
-    # Display the result or perform additional actions if needed
-    Write-Output "Installing $package: $result"
-}
+foreach ($package in $packages){
+    Write-Host "Installing $package..."
+    Write-Host "----------------------"
+    winget install $package
+    Write-Host "----------------------"
+    }
